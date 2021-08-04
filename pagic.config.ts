@@ -1,68 +1,79 @@
 // import { React } from 'https://deno.land/x/pagic/mod.ts';
 
 export default {
-  srcDir: '.',
+  srcDir: ".",
   exclude: [],
-  root: '/',
-  theme: 'docs',
-  plugins: ['clean', 'init', 'md', 'tsx', 'sidebar', 'prev_next', 'ga', 'script', 'layout', 'out'],
+  root: "/",
+  theme: "docs",
+  plugins: [
+    "clean",
+    "init",
+    "md",
+    "tsx",
+    "sidebar",
+    "prev_next",
+    "ga",
+    "script",
+    "layout",
+    "out"
+  ],
   title: "Shaper's Docs",
   description: "Shaper's Docs",
   nav: [
     {
       text: "It's me",
-      link: '/shapers/introduction/index.html',
+      link: "/shapers/introduction/index.html"
     },
     {
-      text: 'About',
-      link: '/shapers//about/index.html',
-      align: 'right',
-    },
+      text: "About",
+      link: "/shapers//about/index.html",
+      align: "right"
+    }
   ],
-  github: 'https://github.com/ink-song/shapers.githup.io',
+  github: "https://github.com/ink-song/shapers.githup.io",
   sidebar: {
-    '/': [
-      'introduction/README.md',
+    "/": [
+      "introduction/README.md",
       {
-        link: 'technology/README.md',
-        children: ['technology/vue3.md'],
+        link: "technology/README.md",
+        children: ["technology/vue3.md", "technology/ts.md"]
       },
       {
-        text: 'Life',
+        text: "Life",
         children: [
-          'life/guitar.md',
+          "life/guitar.md",
           {
-            text: '',
-            link: 'folder/bar.md'
+            text: "",
+            link: "folder/bar.md"
           }
         ]
       },
       {
-        text: 'Interview',
+        text: "Interview",
         children: [
-          'interview/btyedance.md',
+          "interview/btyedance.md",
           {
-            text: '',
-            link: 'interview/btyedance.md'
+            text: "",
+            link: "interview/btyedance.md"
           }
         ]
       },
       {
-        text: 'Study',
+        text: "Study",
         children: [
-          'study/HowWeLearn.md',
+          "study/HowWeLearn.md",
           {
-            text: '',
-            link: 'study/HowWeLearn.md'
+            text: "",
+            link: "study/HowWeLearn.md"
           }
         ]
       }
-    ],
+    ]
   },
   tools: {
     editOnGitHub: true,
-    backToTop: true,
+    backToTop: true
   },
 
-  port: 8000,
+  port: 8000
 };
